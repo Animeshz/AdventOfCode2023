@@ -21,3 +21,8 @@ lines.each_with_index do |line, row|
 end
 
 puts load
+
+# Optimized after solving (b)
+#
+# result = lines.map(&:chars).transpose.map { |row| row.chunk { |cell| cell == '#' }.flat_map { |is_obstacle, cells| is_obstacle ? cells : cells.sort.reverse } }.transpose.map(&:join)
+# puts result.each_with_index.map { |row, idx| row.chars.map { |cell| cell == 'O' ? (result.length-idx) : 0 } }.flatten.sum
