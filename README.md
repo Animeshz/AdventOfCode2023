@@ -22,7 +22,7 @@ xclip -sel clip -o | day01_a.rb
 
     - day 9 (not solution, but [newton's calculus](https://www.youtube.com/watch?v=4AuV93LOPcE))
 
-    - day 10 (polygon filling, [non-zero rule](https://en.wikipedia.org/wiki/Nonzero-rule))
+    - day 10 & day 18 (polygon filling, [non-zero rule](https://en.wikipedia.org/wiki/Nonzero-rule), [shoelace formula](https://en.wikipedia.org/wiki/Shoelace_formula))
 
     - day 12 (accomodating wildcard with rules using dp)
 
