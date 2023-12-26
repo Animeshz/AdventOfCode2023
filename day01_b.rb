@@ -4,12 +4,12 @@ valid_map = { one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eigh
 ans = 0
 while line=gets
   scanned = line.scan(valid).flatten
-  f, l = scanned[0].to_sym, scanned[-1].to_sym
+  f, l = scanned[0], scanned[-1]
 
-  f = if valid_map.has_key? f then valid_map[f] else f.to_s.to_i end
-  l = if valid_map.has_key? l then valid_map[l] else l.to_s.to_i end
+  f = valid_map[f.to_sym] || f
+  l = valid_map[l.to_sym] || l
 
-  ans += f * 10 + l
+  ans += f.to_i * 10 + l.to_i
 end
 
 puts ans
