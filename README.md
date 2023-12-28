@@ -28,5 +28,7 @@ xclip -sel clip -o | day01_a.rb
 
     - day 17 (a star search with restrictions)
 
+    - day 25 (ford-fulkerson algorithm on undirected unweighted graph for min-cut)
+
 </sub>
 
